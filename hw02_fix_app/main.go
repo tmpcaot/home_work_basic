@@ -27,7 +27,7 @@ func main() {
 		return
 	}
 
-	// Печать информации о каждом сотруднике
+	// Печать информации о каждом сотруднике.
 	for _, employee := range staff {
 		printer.PrintStaff(employee)
 	}
