@@ -3,7 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	size := 8 // Размер доски (N x N).
+	var size int
+	fmt.Print("Введите размер шахматной доски: ")
+
+	// Сканируем ввод пользователя.
+	_, err := fmt.Scan(&size)
+	if err != nil {
+		fmt.Println("Ошибка ввода:", err)
+		return
+	}
+
+	// Проверяем, чтобы число было больше 0.
+	if size <= 0 {
+		fmt.Println("Размер должен быть больше 0.")
+		return
+	}
+
 	board := createChessBoard(size)
 	fmt.Println(board)
 }
