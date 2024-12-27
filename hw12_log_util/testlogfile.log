@@ -1,0 +1,7 @@
+info: This is an info log entry
+error: This is an error log entry
+info: Another info log entry
+debug: This is a debug log entry
+warn: This is a warning log entry
+info: Yet another info log entry
+error: Another error log entry
